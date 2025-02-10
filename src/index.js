@@ -4,6 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ChapUseState from "./Chapter/ChapUseState";
+import PracticeUseState from "./practice/PracticeUseState";
+import ChapProps from "./Chapter/ChapProps/ChapProps";
+import PracticeProps from "./practice/PracticeProps";
+import ChapPropsFunction from "./Chapter/ChapProps/ChapPropsFunction";
+import PracticePropsFunction from "./practice/PracticePropsFunction";
+import ChapPropsDefault from "./Chapter/ChapProps/ChapPropsDefault";
+import PraticePropsDefault from "./practice/PracticePropsDefault";
+import ChapPropsArray from "./Chapter/ChapProps/ChapPropsArray";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +21,17 @@ root.render(
          파일명.js 를 import 해서 사용할 수 있음
        */}
     <App />
+      {/*
       <ChapUseState/>
+      <PracticeUseState/>
+      <ChapProps/>
+      <PracticeProps/>
+       <ChapPropsFunction/>
+        <PracticePropsFunction/>
+       <ChapPropsDefault/>
+      <PracticePropsDefault/>
+      */}
+      <ChapPropsArray/>
   </React.StrictMode>
 );
 

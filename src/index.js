@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 import ChapUseState from "./Chapter/ChapUseState";
 import PracticeUseState from "./practice/PracticeUseState";
 import ChapProps from "./Chapter/ChapProps/ChapProps";
@@ -12,6 +12,10 @@ import PracticePropsFunction from "./practice/PracticePropsFunction";
 import ChapPropsDefault from "./Chapter/ChapProps/ChapPropsDefault";
 import PraticePropsDefault from "./practice/PracticePropsDefault";
 import ChapPropsArray from "./Chapter/ChapProps/ChapPropsArray";
+import PracticePropsArray from "./practice/PracticePropsArray";
+import PracticePropsArrayDefault from "./practice/PracticePropsArrayDefault";
+import ChapUseEffect from "./Chapter/ChapUseEffect";
+import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,12 +34,16 @@ root.render(
         <PracticePropsFunction/>
        <ChapPropsDefault/>
       <PracticePropsDefault/>
-      */}
       <ChapPropsArray/>
+      <PracticePropsArrayDefault/>
+      <PracticePropsArray/>
+      <ChapUseEffect/>
+      */}
+      <PracticeUseEffectAxios/>
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();

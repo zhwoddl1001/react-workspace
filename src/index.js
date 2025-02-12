@@ -16,6 +16,9 @@ import PracticePropsArray from "./practice/PracticePropsArray";
 import PracticePropsArrayDefault from "./practice/PracticePropsArrayDefault";
 import ChapUseEffect from "./Chapter/ChapUseEffect";
 import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
+import PizzaList from "./BackendAPI/PizzaList";
+import RootPath from "./RootPath";
+import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,8 +27,17 @@ root.render(
          만일 App.js 가 아니라 다른 파일을 사용하길 원한다면
          파일명.js 를 import 해서 사용할 수 있음
        */}
-    <App />
+      {/*BrowserRouter 로 
+        이동할 경로를 설정했다면
+        index.js 최상단에 BrowserRouter 로
+        
+        모든 javascript,javascriptXML 파일을 감싸줘야함
+        BrowserRouter 와 Routes 은 모든 파일에서 최초 1회만 작성
+      */}
+        
+      <RootPath/>
       {/*
+        <App />
       <ChapUseState/>
       <PracticeUseState/>
       <ChapProps/>
@@ -38,8 +50,10 @@ root.render(
       <PracticePropsArrayDefault/>
       <PracticePropsArray/>
       <ChapUseEffect/>
-      */}
       <PracticeUseEffectAxios/>
+      */}
+
+
   </React.StrictMode>
 );
 

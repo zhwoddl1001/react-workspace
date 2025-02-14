@@ -19,6 +19,7 @@ import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
 import PizzaList from "./BackendAPI/PizzaList";
 import RootPath from "./RootPath";
 import {BrowserRouter} from "react-router-dom";
+import LoginRoute from "./LoginRoute";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,9 +34,10 @@ root.render(
         
         모든 javascript,javascriptXML 파일을 감싸줘야함
         BrowserRouter 와 Routes 은 모든 파일에서 최초 1회만 작성
+          <RootPath/>
       */}
-        
-      <RootPath/>
+        <LoginRoute/>
+
       {/*
         <App />
       <ChapUseState/>

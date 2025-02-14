@@ -5,6 +5,12 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import PizzaList from "./BackendAPI/PizzaList";
 import PizzaDetail from "./BackendAPI/PizzaDetail";
 import PizzaForm from "./BackendAPI/PizzaForm";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
+import CafeList from "./pages/CafeList";
+import CafeDetail from "./pages/CafeDetail";
+import CafeForm from "./pages/CafeForm";
+import Home from "./pages/Home";
 // 경로를 설정해주는 js 파일은 function 을 많이 사용
 
 // const RootPath = () => {
@@ -30,6 +36,7 @@ function RootPath() {
                현재는 2번 방식을 사용한 상태이며,
                RootPath 와 같이 사용할 수 있음
             */}
+            <Header/>
             <Routes>
             {/*
             React 에서 경로로 표기하는 Component 와
@@ -42,10 +49,17 @@ function RootPath() {
             -> Header 와 Footer
             */}
                 {/* 경로 설정 path = api url 경로 작성 element = {<경로에 따라 보여줄 js 파일명칭>} */}
-                <Route path="/" element={<PizzaList/>}/>
+                {/*   <Route path="/" element={<PizzaList/>}/>
                 <Route path="/pizzas/detail/:id" element={<PizzaDetail/>}/>
                 <Route path="/pizza/add" element={<PizzaForm/>}/>
+                */}
+                <Route path="/" element={<Home/>}/>
+                <Route path="/cafes" element={<CafeList/>}/>
+                <Route path="/cafes/:id" element={<CafeDetail/>}/>
+                <Route path="/cafes/add" element={<CafeForm/>}/>
+
             </Routes>
+            <Footer/>
         </Router>
     )
 }
